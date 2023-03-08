@@ -5,11 +5,11 @@ body {
 }
 
 a {
-  color: #007bff;
+  color: #11da2c;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #0ddb0d;
 }
 
 img {
@@ -48,7 +48,7 @@ img {
 /* Estilos del encabezado */
 
 header {
-  background-color: #f8f9fa;
+  background-color: #00b92e;
   padding: 60px 0;
   text-align: center;
 }
@@ -93,18 +93,18 @@ main {
 }
 
 .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #136617e5;
+  border-color: #2b7c0b9a;
 }
 
 .btn-primary:hover {
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #3f8308;
+  border-color: #036600;
 }
 /* Paleta de colores */
 
 :root {
-  --primary-color: #007bff;
+  --primary-color: #0b8300;
   --secondary-color: #6c757d;
   --bg-color: #f8f9fa;
   --text-color: #212529;
