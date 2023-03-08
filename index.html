@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safe planet - Ahorro de energía para el hogar</title>
+    <meta name="description" content="Sitio web de Safe Planet, una empresa comprometida con el cuidado del planeta y la promoción del ahorro de energía en los hogares.">
+    <title>Safe Planet - Ahorro de energía para el hogar</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
   </head>
   <body>
+    <!-- Encabezado -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Safe Planet</a>
@@ -18,13 +20,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Acerca de</a>
+              <a class="nav-link" href="#nosotros">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#articulos">Artículos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -34,8 +42,35 @@
         <p>Nuestra misión es cuidar del planeta, ¿te unes a nosotros?</p>
       </div>
     </header>
+    
+    <!-- Contenido principal -->
     <main>
-      <div class="container">
+      <section id="nosotros" class="section">
+        <div class="container">
+          <h2 class="section-title">Nosotros</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <p>Somos una empresa comprometida con el cuidado del planeta y la promoción del ahorro de energía en los hogares. Desde nuestros inicios, hemos trabajado en ofrecer soluciones sostenibles y accesibles para nuestros clientes.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="nosotros.jpg" alt="Imagen de Nosotros" class="img-fluid">
+            </div>
+          </div>
+          <h2 class="section-title">Misión</h2>
+          <p>Nuestra misión es ofrecer soluciones innovadoras y eficientes para el ahorro de energía en los hogares, a través de productos de alta calidad y un servicio personalizado que garantice la satisfacción de nuestros clientes.</p>
+          <h2 class="section-title">Visión</h2>
+        <p>Nuestra visión es ser líderes en el mercado de soluciones de ahorro de energía para el hogar, y contribuir a la construcción de un mundo más sostenible y responsable con el medio ambiente.</p>
+    
+        <h2>Misión</h2>
+        <p>Nuestra misión es ofrecer soluciones innovadoras y eficientes para el ahorro de energía en los hogares, a través de productos de alta calidad y un servicio personalizado que garantice la satisfacción de nuestros clientes.</p>
+    
+        <h2>Valores</h2>
+        <ul>
+          <li>Compromiso con la sostenibilidad y el cuidado del medio ambiente.</li>
+          <li>Innovación y mejora continua en nuestros productos y servicios.</li>
+          <li>Responsabilidad social y ética en nuestras acciones.</li>
+          <li>Servicio al cliente personal
+    
         <h2>Artículos Recientes</h2>
         <div class="row">
           <div class="col-md-6">
@@ -54,7 +89,65 @@
               <div class="card-body">
                 <h3 class="card-title">Título del Artículo 2</h3>
                 <p class="card-text">Este es otro artículo de ejemplo. Lorem ipsum dolor sit amet, consectetur
-
+                </section>
+                <section id="productos" class="section">
+                  <div class="container">
+                    <h2 class="section-title">Nuestros Productos</h2>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card">
+                          <img src="img/producto1.jpg" class="card-img-top" alt="Producto 1">
+                          <div class="card-body">
+                            <h5 class="card-title">Medidor de energia</h5>
+                            <p class="card-text">Un pequeño medidor de energia que mide las pequeñas fugas en los conectores</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card">
+                          <img src="img/producto2.jpg" class="card-img-top" alt="Producto 2">
+                          <div class="card-body">
+                            <h5 class="card-title">Productos ahorradores</h5>
+                            <p class="card-text">Productos ahorradores los cuales podemos adquirir en cualquir lugar</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card">
+                          <img src="img/producto3.jpg" class="card-img-top" alt="Producto 3">
+                          <div class="card-body">
+                            <h5 class="card-title">Smart Hause</h5>
+                            <p class="card-text">Descripción del producto 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis, ex non fringilla fringilla, diam nunc iaculis felis, sit amet ornare quam erat eu est.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section id="contacto" class="section">
+                  <div class="container">
+                    <h2 class="section-title">Contacto</h2>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p>Para más información acerca de nuestros productos y servicios, no dude en ponerse en contacto con nosotros. Estamos disponibles para responder cualquier pregunta o consulta que pueda tener.</p>
+                        <ul>
+                          <li>Teléfono: 555-1234</li>
+                          <li>Correo electrónico: info@safeplanet.com</li>
+                          <li>Dirección: Calle Falsa 123, Springfield</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Introduzca su nombre">
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder>
           <img src="imagen2.jpg" alt="Imagen del Artículo 2">         
            <p>Este es otro artículo de ejemplo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus purus sed massa mattis feugiat. Sed eget risus feugiat, posuere magna vel, rhoncus velit. Praesent vehicula ante id mi aliquet, sit amet ultrices felis dictum.</p>
           <a href="#">Leer más</a>
