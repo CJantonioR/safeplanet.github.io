@@ -1,103 +1,146 @@
-/* Estilos generales */
+/* Paleta de colores */
 
-body {
-  font-family: Arial, sans-serif;
-}
-
-a {
-  color: #11da2c;
-}
-
-a:hover {
-  color: #0ddb0d;
-}
-
-img {
-  max-width: 100%;
-}
-
-.section {
-  margin: 80px 0;
-}
-
-.section-title {
-  font-size: 36px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-/* Estilos de la barra de navegación */
-
-.navbar {
-  padding: 20px 0;
-}
-
-.navbar-brand {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.nav-link {
-  font-size: 18px;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-/* Estilos del encabezado */
-
-header {
-  background-color: #00b92e;
-  padding: 60px 0;
-  text-align: center;
-}
-
-.header-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.header-content h1 {
-  font-size: 56px;
-  margin-bottom: 30px;
-}
-
-.header-content p {
-  font-size: 24px;
-}
-
-/* Estilos del contenido principal */
-
-main {
-  padding: 0 20px;
-}
-
-.card {
-  margin-bottom: 30px;
-}
-
-.card-img-top {
-  height: 250px;
-  object-fit: cover;
-}
-
-.card-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.card-text {
+:root {
+  --primary-color: #0b8300;
+  --secondary-color: #6c757d;
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  }
+  
+  /* Fuentes */
+  
+  body {
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1.5;
-}
-
-.btn-primary {
+  color: var(--text-color);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  }
+  
+  /* Estilos generales */
+  
+  a {
+  color: var(--primary-color);
+  }
+  
+  a:hover {
+  color: #0ddb0d;
+  }
+  
+  img {
+  max-width: 100%;
+  }
+  
+  .section {
+  margin: 80px 0;
+  }
+  
+  .section-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--primary-color);
+  }
+  
+  /* Estilos de la barra de navegación */
+  
+  .navbar {
+  background-color: var(--primary-color);
+  box-shadow: 0px 0px 10px rgba(10, 180, 32, 0.808);
+  padding: 20px 0;
+  }
+  
+  .navbar-brand {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00cf1c;
+  }
+  
+  .nav-link {
+  font-size: 18px;
+  color: #0ce40c;
+  }
+  
+  .navbar-toggler {
+  border-color: #07c537;
+  }
+  
+  .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  /* Estilos del encabezado */
+  
+  header {
+  background-color: var(--bg-color);
+  padding: 60px 0;
+  text-align: center;
+  }
+  
+  .header-content {
+  max-width: 600px;
+  margin: 0 auto;
+  }
+  
+  .header-content h1 {
+  font-size: 56px;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+  }
+  
+  .header-content p {
+  font-size: 24px;
+  color: var(--text-color);
+  }
+  
+  /* Estilos del contenido principal */
+  
+  main {
+  padding: 20px;
+  }
+  
+  .card {
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  box-shadow: 0px 10px 30px rgba(255, 1, 1, 1.2);
+  }
+  
+  .card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--text-color);
+  }
+  
+  .card-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text-color);
+  }
+  
+  .btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
   background-color: #136617e5;
   border-color: #2b7c0b9a;
 }
 
 .btn-primary:hover {
+  background-color: #0ddb0d;
+  border-color: #0ddb0d;
   background-color: #3f8308;
   border-color: #036600;
 }
@@ -113,6 +156,7 @@ main {
   /* Fuentes */
   
   body {
+
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1.5;
@@ -183,17 +227,229 @@ main {
   padding: 20px;
   }
   
-  .card {
-  border-radius: 10px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
+  .card{ 
+  margin-bottom: 30px;
   }
-  
-  .card:hover {
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+
+  .card-img-top {
+  box-shadow: 0px 10px 30px rgba(255, 1, 1, 1.2);
   }
-  
+
+/* Estilos para la sección de productos destacados */
+#productos {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    }
+    
+    #productos h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #222;
+    }
+    
+    .card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    }
+    
+    .card-img-top {
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    }
+    
+    .card-body {
+    padding: 20px;
+    }
+    
+    .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+    }
+    
+    .card-text {
+    font-size: 18px;
+    color: #777;
+    line-height: 1.5;
+    }
+    
+    .btn-primary {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+    color: #fff;
+    font-weight: bold;
+    }
+    
+    .btn-primary:hover {
+    background-color: #27ae60;
+    border-color: #27ae60;
+    }
+    
+    /* Footer */
+    
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    }
+    
+    .footer-top {
+    background-color: #222;
+    padding: 30px 0;
+    }
+    
+    .footer-top h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    }
+    
+    .footer-top p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    }
+    
+    .footer-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    }
+    
+    .footer-links li {
+    margin-bottom: 10px;
+    }
+    
+    .footer-links a {
+    color: #fff;
+    }
+    
+    .footer-social-icons {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .footer-social-icons li {
+    margin-right: 20px;
+    }
+    
+    .footer-social-icons a {
+    color: #fff;
+    }
+    
+    .footer-bottom {
+    background-color: #111;
+    padding: 10px 0;
+    text-align: center;
+    }
+    
+    .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+    }
+    
+    /* Media queries */
+    
+    @media screen and (max-width: 768px) 
+    
+    .header-content h1 {
+    font-size: 42px;
+    }
+    
+    .header-content p {
+    font-size: 20px;
+    }
+    
+    .card-img-top {
+    height: 200px;
+    }
+    
+    .card-title {
+    font-size: 20px;
+    }
+     .card-text{
+    font-size: 16px;
+     }
+    
+.card-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #1abc9c;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #148f77;
+}
+
+/* Estilos para la sección de artículos */
+#articulos {
+  padding: 80px 0;
+}
+
+#articulos h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #222;
+}
+
+.col-md-6 {
+  margin-bottom: 30px;
+}
+
+.card-img-top {
+  border-radius: 5px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #1abc9c;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #148f77;
+}
   .card-img-top {
   height: 250px;
   object-fit: cover;
@@ -211,4 +467,153 @@ main {
   
   .card-text {
   font-size: 18px;
+  line-height: 1.5;}
+  /* Estilos para la sección de contacto */
+#contacto {
+  background-color: #fff;
+  padding: 80px 0;
+  }
+  
+  #contacto h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #222;
+  }
+  
+  .contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  }
+  
+  .contact-form label {
+  font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  }
+  
+  .contact-form textarea {
+  height: 150px;
+  }
+  
+  .contact-form button[type="submit"] {
+  background-color: #11da2c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+  background-color: #0ddb0d;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+  }
+  
+  .footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+  }
+  
+  .footer-content p {
+  font-size: 18px;
   line-height: 1.5;
+  }
+  
+  .footer-social-links a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #fff;
+  }
+  
+  .footer-social-links a:hover {
+  color: #11da2c;
+  }
+  
+  .footer-bottom {
+  margin-top: 40px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .footer-bottom a {
+  color: #11da2c;
+  }
+  
+  /* Media queries */
+  
+  @media (max-width: 768px) { 
+  .header-content h1 {
+  font-size: 48px;
+  }
+}
+  .header-content p {
+  font-size: 20px;
+  }
+  
+  .navbar-brand {
+  font-size: 24px;
+  }
+  
+  .nav-link {
+  font-size: 16px;
+  }
+  
+  .card-img-top {
+  height: auto;
+  }
+}
+
+  
+  @media (max-width: 576px) 
+  .header-content h1 {
+  font-size: 36px;
+  }
+  
+  .header-content p {
+  font-size: 18px;
+  }
+  
+  .navbar-brand {
+  font-size: 20px;
+  }
+  
+  .nav-link {
+  font-size: 14px;
+  }
+  
+  .card-title {
+  font-size: 20px;
+  }
+  
+  .card-text {
+  font-size: 16px;
+  }
+  
+  #productos h2 {
+  font-size: 30px;
+  }
+  
+  .footer-content p {
+  font-size: 16px;
+  }
+  
+  .footer-bottom {
+  font-size: 12px;
+  }
+  }
